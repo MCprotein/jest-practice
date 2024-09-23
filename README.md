@@ -10,4 +10,8 @@ toMatchObject는 객체 속성의 subset을 비교한다. <br>
 
 mockImplementation은 함수 구현 자체를 갈아낄 수 있다.<br>
 mockReturnValue는 함수의 반환값을 갈아낄 수 있다.<br>
-once가 붙으면 한 번만 그걸 적용한다는것을 의미한다.
+once가 붙으면 한 번만 그걸 적용한다는것을 의미한다. <br><br>
+
+resolves 사용시 return을 붙여야함 [참고](https://jestjs.io/docs/asynchronous) <br><br>
+
+
