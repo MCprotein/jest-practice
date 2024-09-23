@@ -19,19 +19,19 @@ test('okPromise 테스트3', async () => {
   expect(result).toBe('ok')
 })
 
-test('noPrmoise 테스트', () => {
+test('okPromise 테스트', () => {
   const noSpy = jest.fn(noPromise)
   return noSpy().catch((result) => {
     expect(result).toBe('no')
   })
 })
 
-test('noPrmoise 테스트2', () => {
+test('okPromise 테스트2', () => {
   const noSpy = jest.fn(noPromise)
   return expect(noSpy()).rejects.toBe('no')
 })
 
-test('noPrmoise 테스트3', async () => {
+test('okPromise 테스트3', async () => {
   const noSpy = jest.fn(noPromise)
   try {
     const result = await noSpy()
@@ -40,7 +40,7 @@ test('noPrmoise 테스트3', async () => {
   }
 })
 
-test('noPrmoise 테스트4', async () => {
+test('okPromise 테스트4', async () => {
   const noSpy = jest.fn(noPromise)
   await expect(noSpy()).rejects.toBe('no')
 })
@@ -69,7 +69,7 @@ test('okPromise fns 테스트', () => {
   return expect(fns.okPromise()).resolves.toBe('ok')
 })
 
-test('noPrmoise fns 테스트', () => {
+test('okPromise fns 테스트', () => {
   jest.spyOn(fns, 'noPromise').mockRejectedValue('no')
   expect(fns.noPromise()).rejects.toBe('no')
 })
