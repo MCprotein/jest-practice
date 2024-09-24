@@ -3,6 +3,8 @@ import { obj } from './mockFunction'
 let beforeEachCount = 0
 let afterEachCount = 0
 
+describe.skip('describe skip', () => {})
+
 describe('beforeEach/afterEach 적용', () => {
   beforeEach(() => {
     console.log(`각 테스트 전에 실행됨 - ${beforeEachCount++}`)
@@ -13,7 +15,7 @@ describe('beforeEach/afterEach 적용', () => {
     jest.restoreAllMocks()
   })
 
-  test('obj.minus에 스파이를 심고 실행도 안되게.', () => {
+  test.skip('obj.minus에 스파이를 심고 실행도 안되게.', () => {
     jest.spyOn(obj, 'minus').mockImplementation()
     const result = obj.minus(1, 2)
 
@@ -37,6 +39,8 @@ describe('beforeEach/afterEach 적용', () => {
     expect(result2).toBe(5)
     expect(result3).toBe(3)
   })
+
+  test.todo('나중에 만들어야지')
 })
 
 beforeAll(() => {
