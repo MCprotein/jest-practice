@@ -14,4 +14,6 @@ once가 붙으면 한 번만 그걸 적용한다는것을 의미한다. <br><br>
 
 resolves 사용시 return을 붙여야함 [참고](https://jestjs.io/docs/asynchronous) <br><br>
 
+라이프사이클 훅을 일부 테스트에만 적용하고 싶을때 describe를 사용해도 괜찮다. <br><br>
+
 
