@@ -1,7 +1,20 @@
 import { obj } from './mockFunction'
 
+beforeAll(() => {
+  console.log('모든 테스트 전에 실행됨')
+})
+
+beforeEach(() => {
+  console.log('각 테스트 전에 실행됨')
+})
+
 afterEach(() => {
+  console.log('각 테스트 후에 실행됨')
   jest.clearAllMocks()
+})
+
+afterAll(() => {
+  console.log('모든 테스트 후에 실행됨')
 })
 
 test('obj.minus 함수가 1번 호출되었다. (spy 삽입)', () => {
