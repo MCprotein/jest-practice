@@ -1,5 +1,5 @@
-export function timer(callback) {
+export function timer(callback, timeout = 3000) {
   setTimeout(() => {
     callback('success')
-  }, 3000)
+  }, timeout)
 }
