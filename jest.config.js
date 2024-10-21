@@ -5,6 +5,6 @@ module.exports = {
   transform: {
     '^.+.tsx?$': ['ts-jest', {}]
   },
-  rootDir: 'src',
-  setupFilesAfterEnv: ['./testSetup.js']
+  rootDir: '.',
+  setupFilesAfterEnv: ['./src/testSetup.js']
 }
