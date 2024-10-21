@@ -1,5 +1,9 @@
 {
   "files": [
     "global.d.ts"
-  ]
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true
+  }
 }
