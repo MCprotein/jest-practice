@@ -23,3 +23,15 @@ https://www.npmjs.com/package/jest-extended <br><br>
 
 jest.fn은 새로운 함수를 반환한다.
 jest.spyOn은 기존 함수를 감싸서 mock을 만든다. <br><br>
+
+jest는 기본적으로 multi thread로 실행한다. <br>
+그래서 테스트가 순서대로 실행되지 않을 수 있다. <br>
+`--runInBand` 옵션을 주면 single thread로 실행된다. <br>
+monorepo 일때는 오히려 runInBand가 더 빠를 수 있다. <br>
+
+--maxWorkers로 worker의 수를 정할 수 있다. <br><br>
+
+--watchAll 옵션을 주면 파일이 변경될 때마다 전체 테스트를 다시 실행한다. <br>
+--watch 옵션을 주면 파일이 변경될 때마다 해당 파일 테스트만 다시 실행한다 <br><br>
+
+
