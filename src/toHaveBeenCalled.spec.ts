@@ -20,7 +20,8 @@ test('sum 함수가 1,2와 함께 호출되었다.', () => {
 
 test('obj.minus 함수가 1번 호출되었다. (spy함수 생성)', () => {
   const minusSpy = jest.fn(obj.minus)
-  minusSpy(1, 2)
+  expect(minusSpy(1, 2)).toBe(-1)
+
   expect(minusSpy).toHaveBeenCalledTimes(1)
 })
 
