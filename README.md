@@ -34,4 +34,4 @@ monorepo 일때는 오히려 runInBand가 더 빠를 수 있다. <br>
 --watchAll 옵션을 주면 파일이 변경될 때마다 전체 테스트를 다시 실행한다. <br>
 --watch 옵션을 주면 파일이 변경될 때마다 해당 파일 테스트만 다시 실행한다 <br><br>
 
-
+red, green, refactor 전략 <br>
